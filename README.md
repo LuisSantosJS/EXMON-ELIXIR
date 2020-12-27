@@ -19,3 +19,8 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/ex_mon](https://hexdocs.pm/ex_mon).
 
+
+$ iex -S mix
+$ player = ExMon.create_player("luis", :chute, :soco, :cura)
+$ ExMon.start_game(player)
+$ ExMon.make_move(:chute) || ExMon.make_move(:cura) || ExMon.make_move(:soco)
